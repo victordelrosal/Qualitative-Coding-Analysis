@@ -361,6 +361,61 @@
       color: #94a3b8; margin-bottom: 6px;
     }
 
+    /* LECTURER NOTE */
+    .note-wrap {
+      background: #fffbeb;
+      border: 2px solid #fde68a;
+      border-radius: 14px;
+      padding: 34px 38px;
+      margin-bottom: 0;
+      scroll-margin-top: 28px;
+    }
+    .note-head {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 22px; padding-bottom: 16px;
+      border-bottom: 2px solid #fde68a;
+    }
+    .note-badge {
+      background: #92400e; color: white;
+      font-family: system-ui, sans-serif;
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase;
+      padding: 5px 12px; border-radius: 5px;
+      flex-shrink: 0;
+    }
+    .note-head h2 { font-size: 1.5rem; font-weight: normal; color: #78350f; }
+    .note-intro {
+      font-family: system-ui, sans-serif;
+      font-size: 0.92rem; color: #92400e;
+      margin-bottom: 28px; line-height: 1.6;
+    }
+    .note-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+    }
+    .note-lang {
+      border-top: 3px solid #fbbf24;
+      padding-top: 18px;
+    }
+    .note-lang-label {
+      font-family: system-ui, sans-serif;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 2px; text-transform: uppercase;
+      color: #92400e; margin-bottom: 18px;
+    }
+    .note-lang h4 {
+      font-family: system-ui, sans-serif;
+      font-size: 0.88rem; font-weight: 700;
+      color: #1e293b; margin: 18px 0 6px;
+    }
+    .note-lang h4:first-of-type { margin-top: 0; }
+    .note-lang p {
+      font-family: system-ui, sans-serif;
+      font-size: 0.87rem; color: #475569;
+      margin-bottom: 0; line-height: 1.65;
+    }
+
     /* RESPONSIVE */
     @media (max-width: 820px) {
       :root { --sidebar-w: 0px; }
@@ -368,6 +423,8 @@
       main { padding: 28px 22px; }
       header { padding: 36px 22px; }
       header h1 { font-size: 1.8rem; }
+      .note-cols { grid-template-columns: 1fr; gap: 28px; }
+      .note-wrap { padding: 24px 20px; }
     }
   </style>
 </head>
@@ -380,6 +437,7 @@
     <span class="label">Dissertation Toolkit</span>
     <span class="title">QCA Student Guide</span>
   </div>
+  <a href="#intro"><span class="nav-n" style="color:#fbbf24">&#9679;</span> Lecturer's Note</a>
   <a href="#s1"><span class="nav-n">1</span> Qualitative Research</a>
   <a href="#s2"><span class="nav-n">2</span> Semi-Structured Interviews</a>
   <a href="#s3"><span class="nav-n">3</span> What is QCA?</a>
@@ -405,6 +463,78 @@
 </header>
 
 <main>
+
+<!-- ===== LECTURER'S NOTE ===== -->
+<section class="section" id="intro">
+  <div class="note-wrap">
+    <div class="note-head">
+      <span class="note-badge">Lecturer's Note</span>
+      <h2>What You Need to Do: A Summary</h2>
+    </div>
+    <p class="note-intro">You have your transcripts. Here is what to do, step by step. The full guide below provides the theory and detail behind each stage — read this first, then refer to the numbered sections as you work.</p>
+
+    <div class="note-cols">
+
+      <!-- ENGLISH -->
+      <div class="note-lang">
+        <div class="note-lang-label">&#127470;&#127466; English (UK / Ireland)</div>
+
+        <h4>Before anything else</h4>
+        <p>Anonymise every transcript: replace participant names and any identifying details with codes (P1, P2, etc.). Save each file as plain text. Read each transcript through once before coding. Do not skip this.</p>
+
+        <h4>Step 1 &mdash; Label your interview questions</h4>
+        <p>Assign a label to each question in your interview guide: Q1, Q2, Q3, and so on. Keep a reference document with each Q label and its full question text. These become your matrix column headers and a dissertation appendix.</p>
+
+        <h4>Step 2 &mdash; Initial coding with Prompt 1</h4>
+        <p>Open ChatGPT, Claude (claude.ai), or Google Gemini. Copy Prompt 1 from Section 6 of this guide. Fill in your research topic and list your interview questions. Paste the full anonymised transcript at the bottom. Run it once per participant. Save each output (e.g. P1_codes.txt).</p>
+
+        <h4>Step 3 &mdash; Build your codebook with Prompt 2</h4>
+        <p>Once you have coded all transcripts, copy all Prompt 1 outputs together and paste them into Prompt 2. This produces a unified codebook. Review every code. Correct anything that does not accurately reflect your data.</p>
+
+        <h4>Step 4 &mdash; Final coding with Prompt 3</h4>
+        <p>Paste your codebook and your interview questions into Prompt 3. Add the transcript. Run it once per participant. This gives you the clean, consistent row of codes for each participant's row in the matrix.</p>
+
+        <h4>Step 5 &mdash; Build the matrix in Excel</h4>
+        <p>Rows = participants (P1, P2...). Columns = questions (Q1, Q2...). Enter the codes from your Prompt 3 outputs. Use a dash where no code applies. Apply Conditional Formatting to colour-code by code. Build a legend below the matrix. Export as an image for your dissertation.</p>
+
+        <h4>Step 6 &mdash; Analyse and write up</h4>
+        <p>Count code frequencies (COUNTIF in Excel). Identify dominant themes and outliers. For each major theme: name it, quote a participant directly, and connect it to your literature review. In your methodology chapter: include a reflexivity statement, address trustworthiness (Lincoln and Guba, 1985), justify your sample size using data saturation, and acknowledge AI assistance transparently.</p>
+
+        <p style="margin-top:16px; font-style:italic; color:#92400e;">Bring this guide to our next supervision session.</p>
+      </div>
+
+      <!-- SPANISH -->
+      <div class="note-lang">
+        <div class="note-lang-label">&#127474;&#127485; Espa&ntilde;ol (M&eacute;xico)</div>
+
+        <h4>Antes de empezar</h4>
+        <p>Anonimiza todas las transcripciones: sustituye el nombre de cada participante y cualquier dato identificable por un c&oacute;digo (P1, P2, etc.). Guarda cada archivo como texto simple. Lee cada transcripci&oacute;n completa una vez antes de empezar a codificar. No omitas este paso.</p>
+
+        <h4>Paso 1 &mdash; Etiqueta tus preguntas de entrevista</h4>
+        <p>Asigna una etiqueta a cada pregunta de tu gu&iacute;a de entrevista: Q1, Q2, Q3, y as&iacute; sucesivamente. Conserva un documento de referencia con cada etiqueta y el texto completo de la pregunta correspondiente. &Eacute;stas ser&aacute;n los encabezados de columna de tu matriz y formar&aacute;n parte del ap&eacute;ndice de tu tesis.</p>
+
+        <h4>Paso 2 &mdash; Codificaci&oacute;n inicial con el Prompt 1</h4>
+        <p>Abre ChatGPT, Claude (claude.ai) o Google Gemini. Copia el Prompt 1 de la Secci&oacute;n 6 de esta gu&iacute;a. Agrega tu tema de investigaci&oacute;n y la lista de preguntas de entrevista. Pega la transcripci&oacute;n anonimizada completa al final. Ej&eacute;cutalo una vez por participante. Guarda cada resultado (por ejemplo, P1_codigos.txt).</p>
+
+        <h4>Paso 3 &mdash; Construye tu libro de c&oacute;digos con el Prompt 2</h4>
+        <p>Una vez que hayas procesado todas las transcripciones, re&uacute;ne todos los resultados del Prompt 1 y p&eacute;galos en el Prompt 2. Esto generar&aacute; un libro de c&oacute;digos unificado. Revisa cada c&oacute;digo con cuidado. Corrige lo que no refleje con precisi&oacute;n tus datos.</p>
+
+        <h4>Paso 4 &mdash; Codificaci&oacute;n final con el Prompt 3</h4>
+        <p>Pega tu libro de c&oacute;digos y tus preguntas de entrevista en el Prompt 3. Agrega la transcripci&oacute;n. Ej&eacute;cutalo una vez por participante. Esto te dar&aacute; la fila de c&oacute;digos limpia y consistente para cada participante en la matriz.</p>
+
+        <h4>Paso 5 &mdash; Construye la matriz en Excel</h4>
+        <p>Filas = participantes (P1, P2...). Columnas = preguntas (Q1, Q2...). Ingresa los c&oacute;digos de los resultados del Prompt 3. Usa un gui&oacute;n donde no haya c&oacute;digo aplicable. Aplica Formato condicional para asignar un color &uacute;nico a cada c&oacute;digo. Construye una leyenda debajo de la matriz. Exporta la imagen para tu tesis.</p>
+
+        <h4>Paso 6 &mdash; Analiza y redacta tus hallazgos</h4>
+        <p>Cuenta la frecuencia de cada c&oacute;digo (usa CONTAR.SI en Excel). Identifica los temas dominantes y los casos at&iacute;picos. Para cada tema central: n&oacute;mbralo, cita directamente a un participante y con&eacute;ctalo con tu marco te&oacute;rico. En tu cap&iacute;tulo de metodolog&iacute;a: incluye una declaraci&oacute;n de reflexividad, aborda los criterios de confiabilidad (Lincoln y Guba, 1985), justifica el tama&ntilde;o de tu muestra mediante la saturaci&oacute;n te&oacute;rica y menciona el uso de IA de forma transparente.</p>
+
+        <p style="margin-top:16px; font-style:italic; color:#92400e;">Trae esta gu&iacute;a a nuestra pr&oacute;xima sesi&oacute;n de supervisi&oacute;n.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- ===== SECTION 1 ===== -->
 <section class="section" id="s1">
