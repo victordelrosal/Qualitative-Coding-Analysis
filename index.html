@@ -127,9 +127,8 @@
     .note-badge{ background:var(--ink); color:var(--book); font-family:var(--sans); font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:5px 12px; border-radius:4px; flex-shrink:0; }
     .note-head h2{ font-family:var(--serif); font-size:1.6rem; font-weight:400; color:var(--ink); }
     .note-intro{ font-family:var(--sans); font-size:.95rem; color:var(--clay-deep); margin-bottom:28px; line-height:1.6; }
-    .note-cols{ display:grid; grid-template-columns:1fr 1fr; gap:36px; }
+    .note-cols{ display:grid; grid-template-columns:1fr; gap:36px; }
     .note-lang{ border-top:2px solid var(--clay); padding-top:18px; }
-    .note-lang-label{ font-family:var(--sans); font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--clay-deep); margin-bottom:18px; }
     .note-lang h4{ font-family:var(--sans); font-size:.9rem; font-weight:700; color:var(--ink); margin:18px 0 6px; }
     .note-lang h4:first-of-type{ margin-top:0; }
     .note-lang p{ font-family:var(--sans); font-size:.89rem; color:var(--muted); margin-bottom:0; line-height:1.62; }
@@ -222,8 +221,6 @@
 
       <!-- ENGLISH -->
       <div class="note-lang">
-        <div class="note-lang-label">&#127470;&#127466; English (UK / Ireland)</div>
-
         <h4>Before anything else</h4>
         <p>Anonymise every transcript: replace participant names and any identifying details with codes (P1, P2, etc.). Save each file as plain text. Read each transcript through once before coding. Do not skip this.</p>
 
@@ -246,34 +243,6 @@
         <p>Count code frequencies (COUNTIF in Excel). Identify dominant themes and outliers. For each major theme: name it, quote a participant directly, and connect it to your literature review. In your methodology chapter: include a reflexivity statement, address trustworthiness (Lincoln and Guba, 1985), justify your sample size using data saturation, and acknowledge AI assistance transparently.</p>
 
         <p style="margin-top:16px; font-style:italic; color:#A65843;">Bring this guide to our next supervision session.</p>
-      </div>
-
-      <!-- SPANISH -->
-      <div class="note-lang">
-        <div class="note-lang-label">&#127474;&#127485; Espa&ntilde;ol (M&eacute;xico)</div>
-
-        <h4>Antes de empezar</h4>
-        <p>Anonimiza todas las transcripciones: sustituye el nombre de cada participante y cualquier dato identificable por un c&oacute;digo (P1, P2, etc.). Guarda cada archivo como texto simple. Lee cada transcripci&oacute;n completa una vez antes de empezar a codificar. No omitas este paso.</p>
-
-        <h4>Paso 1 &mdash; Etiqueta tus preguntas de entrevista</h4>
-        <p>Asigna una etiqueta a cada pregunta de tu gu&iacute;a de entrevista: Q1, Q2, Q3, y as&iacute; sucesivamente. Conserva un documento de referencia con cada etiqueta y el texto completo de la pregunta correspondiente. &Eacute;stas ser&aacute;n los encabezados de columna de tu matriz y formar&aacute;n parte del ap&eacute;ndice de tu tesis.</p>
-
-        <h4>Paso 2 &mdash; Codificaci&oacute;n inicial con el Prompt 1</h4>
-        <p>Abre ChatGPT, Claude (claude.ai) o Google Gemini. Copia el Prompt 1 de la Secci&oacute;n 6 de esta gu&iacute;a. Agrega tu tema de investigaci&oacute;n y la lista de preguntas de entrevista. Pega la transcripci&oacute;n anonimizada completa al final. Ej&eacute;cutalo una vez por participante. Guarda cada resultado (por ejemplo, P1_codigos.txt).</p>
-
-        <h4>Paso 3 &mdash; Construye tu libro de c&oacute;digos con el Prompt 2</h4>
-        <p>Una vez que hayas procesado todas las transcripciones, re&uacute;ne todos los resultados del Prompt 1 y p&eacute;galos en el Prompt 2. Esto generar&aacute; un libro de c&oacute;digos unificado. Revisa cada c&oacute;digo con cuidado. Corrige lo que no refleje con precisi&oacute;n tus datos.</p>
-
-        <h4>Paso 4 &mdash; Codificaci&oacute;n final con el Prompt 3</h4>
-        <p>Pega tu libro de c&oacute;digos y tus preguntas de entrevista en el Prompt 3. Agrega la transcripci&oacute;n. Ej&eacute;cutalo una vez por participante. Esto te dar&aacute; la fila de c&oacute;digos limpia y consistente para cada participante en la matriz.</p>
-
-        <h4>Paso 5 &mdash; Construye la matriz en Excel</h4>
-        <p>Filas = participantes (P1, P2...). Columnas = preguntas (Q1, Q2...). Ingresa los c&oacute;digos de los resultados del Prompt 3. Usa un gui&oacute;n donde no haya c&oacute;digo aplicable. Aplica Formato condicional para asignar un color &uacute;nico a cada c&oacute;digo. Construye una leyenda debajo de la matriz. Exporta la imagen para tu tesis.</p>
-
-        <h4>Paso 6 &mdash; Analiza y redacta tus hallazgos</h4>
-        <p>Cuenta la frecuencia de cada c&oacute;digo (usa CONTAR.SI en Excel). Identifica los temas dominantes y los casos at&iacute;picos. Para cada tema central: n&oacute;mbralo, cita directamente a un participante y con&eacute;ctalo con tu marco te&oacute;rico. En tu cap&iacute;tulo de metodolog&iacute;a: incluye una declaraci&oacute;n de reflexividad, aborda los criterios de confiabilidad (Lincoln y Guba, 1985), justifica el tama&ntilde;o de tu muestra mediante la saturaci&oacute;n te&oacute;rica y menciona el uso de IA de forma transparente.</p>
-
-        <p style="margin-top:16px; font-style:italic; color:#A65843;">Trae esta gu&iacute;a a nuestra pr&oacute;xima sesi&oacute;n de supervisi&oacute;n.</p>
       </div>
 
     </div>
